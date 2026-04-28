@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Contact Us</title>
+    <link rel="stylesheet" href="contactPage.css">
+</head>
+<body>
+    <h1> Get in Touch </h1>
+    <h4> We'd love to hear from you. Fill out below and our friendly team 
+        will get back to you soon.
+    </h4>
+    <div class="page-layout">
+    <form action="concat.php" name="contact_form" method="post">
+        
+            <div class="left-side">
+            <div class="field-group">
+        Child's Name:<br>
+        <input type="text" name="child_name"  id="child_name" placeholder="Enter your Child's Name">
+        <p id="error_child_name"></p>
+        
+        </div>
+
+        <div class="field-group">
+        Parent's Name:<br>
+         <input type="text" name="parent_name"  id="parent_name"  placeholder="Enter your Name">
+         <p id="error_parent_name"></p>
+         
+         </div>
+         
+         Gender:<br>
+         <input type="radio" name="gender" id="male" >Male<br>
+         <input type="radio" name="gender" id="female" >Female<br><br>
+         <p id="error_gender"></p>
+          Email:<br>
+         <input type="text" name="email" id="email"  placeholder="Enter your Email">
+         <p id="error_email"></p>
+         
+         Age:<br>
+         <input type="number" name="age" id="age" class="small-input" placeholder="Enter Child's age">
+         <p id="error_age"></p>
+         Favourite Subject:<br>
+         <input type="checkbox" name="favourite" value="Letters"> Letters<br>
+         <input type="checkbox" name="favourite" value="Animals"> Animals<br>
+         <input type="checkbox" name="favourite" value="Numbers"> Numbers<br>
+         <p id="error_favourite"></p>
+        
+         Your Message:<br>
+         <textarea name="message" id="message"></textarea>
+         <p id="error_message"></p>
+         <input type="submit" id="sent-btn" value="Send Message" onclick="submitForm()"> 
+         
+        </form>
+         </div>
+         <div class="right-side">
+         <img src="Logo.jpg" alt="Error">
+         </div>
+         </div>
+
+  <script src="concat.js"></script>
+</body>
+</html>
